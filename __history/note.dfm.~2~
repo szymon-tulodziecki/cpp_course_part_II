@@ -1,0 +1,97 @@
+object Form1: TForm1
+  Left = 0
+  Top = 0
+  Caption = 'Notatnik'
+  ClientHeight = 442
+  ClientWidth = 628
+  Color = clBtnFace
+  Font.Charset = DEFAULT_CHARSET
+  Font.Color = clWindowText
+  Font.Height = -12
+  Font.Name = 'Segoe UI'
+  Font.Style = []
+  Menu = MainMenu1
+  TextHeight = 15
+  object tresc: TMemo
+    Left = 0
+    Top = 0
+    Width = 628
+    Height = 442
+    Align = alClient
+    Font.Charset = EASTEUROPE_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -12
+    Font.Name = 'Times New Roman'
+    Font.Style = []
+    ParentFont = False
+    TabOrder = 0
+    ExplicitLeft = 16
+    ExplicitTop = 64
+    ExplicitWidth = 185
+    ExplicitHeight = 89
+  end
+  object MainMenu1: TMainMenu
+    object Plik1: TMenuItem
+      Caption = '&Plik'
+      object Nowy1: TMenuItem
+        Caption = '&Nowy'
+      end
+      object Nowy2: TMenuItem
+        Caption = '-'
+      end
+      object Otwrz1: TMenuItem
+        Caption = '&Otw'#243'rz'
+        OnClick = Otwrz1Click
+      end
+      object Otwrz2: TMenuItem
+        Caption = 'Zapisz    Ctrl+ S'
+      end
+      object Zapisz1: TMenuItem
+        Caption = 'Zapisz jako'
+      end
+      object N1: TMenuItem
+        Caption = '-'
+      end
+      object Zakocz1: TMenuItem
+        Caption = 'Zako'#324'cz'
+      end
+    end
+    object Edytuj1: TMenuItem
+      Caption = '&Edytuj'
+      object Wytnijctrlx1: TMenuItem
+        Caption = 'Wytnij    Ctrl+ X'
+      end
+      object Kopiujctrlc1: TMenuItem
+        Caption = 'Kopiuj    Ctrl+ C'
+      end
+      object Wklejctrlv1: TMenuItem
+        Caption = 'Wklej     Ctrl + V'
+      end
+    end
+    object Format1: TMenuItem
+      Caption = '&Format'
+      object Zawijaniewierszy1: TMenuItem
+        Caption = 'Zawijanie wierszy'
+      end
+      object Czcionka1: TMenuItem
+        Caption = 'Czcionka'
+      end
+    end
+    object Pomoc1: TMenuItem
+      Caption = '&Pomoc'
+      object Informacje1: TMenuItem
+        Caption = 'Informacje'
+        object Oprogramie1: TMenuItem
+          Caption = 'O programie'
+        end
+        object Sprawdonline1: TMenuItem
+          Caption = 'Sprawd'#378' online'
+        end
+      end
+    end
+  end
+  object OpenDialog1: TOpenDialog
+    Filter = 'Pliki tekstowe(txt)|*txt|Wszystkie pliki|*.*'
+    Left = 24
+  end
+end
